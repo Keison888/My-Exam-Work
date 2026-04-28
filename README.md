@@ -66,5 +66,6 @@
   I'll try to respond as soon as I can.
 </h4>
 
-<h3> Thanks!</h3>
+
+<br><br><br>
 ![Thanks](giphy.gif)
