@@ -33,6 +33,38 @@
   <li>SQLAlchemy (SPECIFICALLY VERSION 1.3.24, or else it won't work!!)</li>
   <li>dataclasses</li>
 </ul>
-<h4></h4>
 
+<h3> Useful Knowledge </h3>
+<h4> The login for the admin account is:</h4>
+<h5> Email: test@email.com </h5>
+<h5> Password: abc </h5>
+<h4> The link to the admin login is: http://127.0.0.1:5000/adminLogin</h4>
+
+<h3> Unsure what to do?</h3>
+<h4> Here is a list of things that I suggest you do: </h4>
+<ul>
+  <li>Explore every page</li>
+  <li>Create an account</li>
+  <li>'Login'</li>
+  <li>Edit the edit the details of the account</li>
+  <li>Login to the admin account</li>
+  <li>Make your regular account 'producer verified'</li>
+  <li>Delete one of my pre-set products</li>
+  <li>Add a product to the market</li>
+  <li>Edit one of your products</li>
+  <li>Edit your producer information</li>
+</ul>
+
+<h3> 
+  That's about it.<br> 
+  I hope that it atleast runs and once you feel that you have done explored enough,<br>
+  Be sure to move back to the email and fill in the survay.
+</h3>
+
+<h4>
+  If you need help with anything, feel free to message me.
+  I'll try to respond as soon as I can.
+</h4>
+
+<h3> Thanks!</h3>
 
