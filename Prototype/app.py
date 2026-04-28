@@ -143,22 +143,26 @@ def account():
 @app.route("/account_myProfile", methods=["GET", "POST"])
 def myProfile():
     currentUserId = 1
-    query = select([Producer]).where(Producer.c.UserId == currentUserId)
     conn = engine.connect()
-    result = conn.execute(query).fetchall()
-
+    currentProducerDetails = conn.execute(select([Producer]).where(Producer.c.UserId == currentUserId)).fetchone()
     # Form to update the Producer's profile
     if request.method == "POST":
-
         name = request.form['name']
         image = request.form['image']
         description = request.form['description']
+
+        if name == "":
+            name = currentProducerDetails[2]
+        if image == "":
+            image = currentProducerDetails[3]
+        if description == "":
+            description = currentProducerDetails[4]
 
         query = update(Producer).where(Producer.c.UserId == currentUserId).values(Name=name, Image=image, Description=description)
         conn = engine.connect()
         conn.execute(query)
 
-    return render_template("account_myProfile.html", userInfo=result)
+    return render_template("account_myProfile.html", currentProducerDetails=currentProducerDetails)
 
 
 # This page allows the Producer to be able to list their products onto the market
@@ -398,7 +402,7 @@ def market():
 @app.route("/producer")
 def producer():
     conn = engine.connect()
-    currentProducerId = 1
+    currentProducerId = 2
     products = conn.execute(select([Product]).where(Product.c.UserId == currentProducerId)).fetchall()
     producer = conn.execute(select([Producer]).where(Producer.c.UserId == currentProducerId)).fetchall()
 
@@ -485,5 +489,4 @@ def callAll(tableName):
     return result
 
 if __name__ == "__main__":
-    conn.execute(update(User).where(User.c.Id == 2).values(Email="NotMy@email.derp"))
     app.run(debug=True)
