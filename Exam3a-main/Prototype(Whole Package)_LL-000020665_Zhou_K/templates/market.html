@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Market</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/market.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/productCard.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="banner">
+        <h1 class="bannerText"> Market </h1>
+    </div>
+
+
+    <div class="filter">
+        <h3> Filter By: </h3>
+        <button> Category </button>
+        <button> Category </button>
+        <button> Category </button>
+        <input id="search" name="search" placeholder="Search">
+    </div>
+
+    <div> Sort By </div>
+
+    <div class="products">
+        {% for product in products %}
+            <div class="productCard">
+                <h4> {{ product[3] }} </h4>
+                <div class="productImage"> {{ product[2] }} </div>
+                <div class="productInfo">
+                    <h5 class="productDescription"> {{ product[4] }} </h5>
+                    <h5 class="productPrice"> £{{ product[6] }} </h5>
+                    <a class="productButton" href="product"> View </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+body{
+    background-color: rgba(0,0,0,0.25);
+}
+
+.underline{
+    width: 20vw !important;
+}
+
+h2{
+    color: white;
+}
+
+.basketInter{
+    display: grid;
+    grid-template-columns: min(67.5vw, 800px) min(20vw, 50px);
+    height: 47vw;
+    width: min(90vw, 1150px);
+    margin: auto;
+}
+
+.innerDashboard{
+    border: 1px white solid;
+    width: min(65vw, 750px);
+    height: 46vw;
+    padding: 0px !important;
+}
+
+.basketProductCard{
+    display: grid;
+    grid-template-columns: 13vw 48vw;
+    grid-template-rows: 8vw 3vw;
+    margin: auto auto auto auto;
+    gap: 0.5vw;
+    margin-top: 2vw;
+    width: min(65vw, 745px);
+    height: min(11vw, 175px);
+}
+
+.image{
+    border: 1px white solid;
+    grid-row: 1 / span 2;
+
+    width: min(13vw, 250px);
+    height: min(11.5vw, 175px);
+}
+
+.miniDescription{
+    display: grid;
+    grid-template-rows: 2.25vw 2vw 2vw;
+    border: 1px white solid;
+    background-color: rgba(0,0,0,0.75);
+    width: min(48vw, 485px);
+    height: min(8vw, 130px);
+}
+
+    .miniDescription h3 {
+        font-size: min(1.5vw, 22px) !important;
+        text-align: left !important;
+        margin: 0.5vw !important;
+    }
+
+    .miniDescription h5{
+        color: white;
+        margin-left: 0.5vw;
+        font-size: min(1vw, 13px);
+    }
+
+    .miniDetails{
+        margin-top: 0vw;
+    }
+
+    .unitPrice{
+        text-align: right;
+        margin-right: 0.5vw;
+    }
+
+.quantity{
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px white solid;
+    background-color: rgba(0,0,0,0.75);
+    font-size: 1.5vw;
+    width: min(48vw, 485px);
+    height: min(3vw, 30px);
+    margin-top: 0vw;
+}
+
+.quantitySelect{
+    display: grid;
+    grid-template-columns: 2.5vw 11vw 2.5vw 9vw;
+    height: min(3vw, 30px);
+    font-size: 1.5vw;
+    margin-top: 0vw;
+}
+
+.sub{
+    height: 2.5vw;
+    margin: -0.25vw auto auto auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px white solid;
+    color: #D03D3D;
+    font-weight: bold;
+}
+
+.numbers{
+    width: min(11vw, 150px);
+    height: min(1vw, 20px);
+    padding: min(0.5vw, 2px);
+    border: 0.5px white solid;
+    margin: 0.2vw auto auto auto;
+    text-align: center;
+    color: white;
+    font-size: min(1.25vw, 20px);
+}
+
+.add{
+    height: 2.5vw;
+    margin: -0.25vw auto auto 1vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px white solid;
+    color: #98EF8E;
+    font-weight: bold;
+}
+
+.remove{
+    height: 2vw;
+    width: 9vw;
+    color: #D03D3D;
+    font-size: min(1.25vw, 15px);
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px white solid;
+
+    margin: auto;
+    margin-left: 20vw;
+}
+
+.prices{
+    display: grid;
+    grid-template-rows: min(3vw, 50px) min(0.75vw, 20px) 35vw 0.25vw 4vw 2.5vw;
+    color: white;
+    border: 1px white solid;
+    background-color: rgba(0,0,0,0.5);
+    width: min(22vw, 300px);
+    height: 47vw;
+}
+
+.prices h2{
+    font-size: 1.5vw;
+}
+
+.prices .underline{
+    width: min(15vw, 200px) !important;
+    margin-top: 1vw !important;
+}
+
+.priceCard{
+    display: grid;
+    grid-template-columns: min(4vw, 50px) min(9vw, 190px) min(6vw, 75px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: min(19vw, 300px);
+}
+
+.priceCard h5{
+    font-size: max(1vw, 5px);
+}
+
+.totalPrice{
+    display: flex;
+    justify-content: space-around;
+    margin-top: min(0vw, 10px);
+    font-size: min(1.5vw, 50px) !important;
+    font-size: 2vw;
+    color: white;
+}
+
+.button{
+    width: min(10vw, 100px);
+    height: min(1.7vw, 40px);
+    font-size: min(1.5vw, 20px);
+    margin-right: 1vw !important;
+    margin-top: 1vw !important;
+    padding: 0vw !important;
+}

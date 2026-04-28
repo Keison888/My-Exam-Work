@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Producer</title>
+
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/producer.css')}}" />
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/productCard.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    {% for info in producer %}
+    <h1 class="title"> {{ info[2] }} </h1>
+    <div class="underline"></div>
+    <div class="producerCard">
+        <div class="imageBox">
+            <img src="static/Barn.jpg" class="image">
+        </div>
+        <div class="info">
+            <h2> {{ info[4] }} </h2>
+            <a href="wip" class="button"> Link </a>
+        </div>
+    </div>
+    {% endfor %}
+
+
+    <div class="producerItems">
+        <h2> Producer Listed Items </h2>
+        <div class="products">
+            {% for product in products %}
+                <div class="productCard">
+                    <h4> {{ product[3] }} </h4>
+                    <div class="productImage"> {{ product[2] }} </div>
+                    <div class="productInfo">
+                        <h5 class="productDescription"> {{ product[4] }} </h5>
+                        <h5 class="productPrice"> £{{ product[6] }} </h5>
+                        <a class="productButton" href="product"> View </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

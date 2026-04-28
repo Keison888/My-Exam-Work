@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/login.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <h1 class="title"> My Admin </h1>
+    <div class="underline"></div>
+
+    <div class="dashboard">
+        <form method = "POST" class="innerDashboard">
+            <h3> Login </h3>
+            <input id="email" name="email" placeholder="Email">
+            <input id="password" name="password" placeholder="Password" type="password">
+
+            <div class="rememberMe">
+                <input class="tick" type="checkbox">
+                <h6> Remember Me </h6>
+            </div>
+            <button class="button" type="submit"> Login </button>
+        </form>
+    </div>
+
+
+
+
+    {% endblock %}
+
+</body>
+</html>

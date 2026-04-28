@@ -1,0 +1,358 @@
+body{
+    width: min(90vw, 1250px);
+    margin: auto;
+    background-color: #390000;
+}
+
+h2{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+table{
+   color: white;
+   background-color: rgba(0, 0, 0, 0.25);
+   border: 0.1vw white solid;
+   border-collapse: collapse;
+
+   margin: auto;
+
+}
+
+th{
+    border: 0.1vw grey solid;
+}
+
+td{
+    border: 0.1vw grey solid;
+}
+
+.navbar{
+    display: flex;
+    height: min(8vw, 100px);
+    justify-content: space-between;
+    padding-right: 5vw;
+    padding-left: 5vw;
+
+
+    background-color: #FDF1D1;
+    border-bottom: 0.25rem #F8BFA5 solid;
+}
+    .logo{
+        width: min(15vw, 200px);
+    }
+
+    .navbar a{
+        font-size: min(2.5vw, 30px);
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .market{
+        margin-left: -10vw;
+    }
+
+    .ourProducers{
+        margin-left: -10vw;
+    }
+
+    .myAccount{
+        margin-right: -12vw;
+    }
+
+    .basket{
+        width: min(3.5vw, 50px);
+        margin-top: 0.25rem;
+    }
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    width: min(90vw, 1250px);
+    height: min(35vw, 600px);
+
+    background-color: grey;
+    justify-content: center;
+}
+
+    .bannerText{
+        width: 30vw;
+        margin: auto;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.75);
+
+        padding: 2vw;
+        text-align: center;
+        border: 0.5vw rgba(100, 100, 100, 0.5) solid;
+
+    }
+
+
+.filter{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: min(90vw, 1242px);
+    height: min(10vw, 75px);
+
+    margin: auto;
+    background-color: #390000;
+    color: white;
+    border-bottom: 0.25vw #853C3C solid;
+}
+    .filter h3{
+        font-size: min(3vw, 25px);
+        margin: auto;
+        margin-left: 1vw;
+    }
+
+    .filter button{
+        width: 13vw;
+        height: 4vw;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: min(2vw, 25px);
+        color: white;
+        background: none;
+    }
+
+    .filter input{
+        width: min(20vw, 300px);
+        height: min(3vw, 30px);
+        margin-top: auto;
+        margin-bottom: auto;
+        color: white;
+        background: none;
+    }
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: min(3vw, 35px);
+}
+
+.underline{
+    width: min(35vw, 250px);
+    height: 0.25vw;
+
+    margin: -1vw auto 4vw; auto;
+
+    background-color: white;
+}
+
+.dashboard{
+    display: grid;
+    background-color: rgba(152, 239, 142, 0.5);
+    padding: 10px;
+    margin: auto;
+}
+
+    .dashboard h3{
+        text-align:center;
+        color: white;
+        font-size: min(3vw, 40px);
+    }
+
+.innerDashboard{
+    display: grid;
+    background-color: rgba(0,0,0,0.5);
+    border: 0.25px #F9FFED solid;
+    margin: auto;
+}
+
+.innerDashboard input{
+    width: min(40vw, 500px);
+    height: min(3.5vw, 40px);
+    color: white;
+    background-color: rgba(0,0,0,0.75);
+    border: 0.25px #F9FFED solid;
+
+    margin: auto;
+}
+
+
+.sideNav{
+    background-color: rgba(0,0,0,0.5);
+}
+
+    .sideNav div{
+        display: grid;
+    }
+
+    .sideNav h3{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2vw;
+    }
+
+    .sideNav a{
+        color: white;
+        margin-left: 2vw;
+        font-size: min(2vw, 30px);
+    }
+
+.sideContainer{
+    background-color: rgba(0,0,0,0.5);
+}
+
+    .sideContainer h2{
+        color: white;
+        font-size: min(3vw, 50px);
+    }
+
+    .sideContainer h3{
+        color: white;
+        margin-left: 2vw;
+        font-size: 2vw;
+        width: 13vw;
+    }
+
+    .sideContainer input{
+
+    }
+
+.rememberMe{
+    display: grid;
+    grid-template-columns: 4vw 20vw;
+    margin-top: 1vw;
+    margin-left: 8vw;
+}
+
+.rememberMe h6{
+    grid-column: 2;
+    color: white;
+    text-align: left;
+    margin-left: min(1vw);
+    margin-top: 0px;
+    font-size: min(1.75vw, 15px);
+}
+
+.tick{
+    grid-column: 1;
+    width: min(1.5vw, 15px);
+    height: min(1.5vw, 15px);
+    border: 1px #F9FFED solid;
+    margin-top: -0.7vw !important;
+    margin-left: max(-17vw, -275px) !important;
+}
+
+.button{
+    background-color: #98EF8E;
+    margin: auto;
+    padding: 0.3rem;
+    border: 0.1rem #F9FFED solid;
+    text-align: center;
+}
+
+.logLink{
+    text-align: right;
+    color: #F9FFED;
+    margin-right: 2vw;
+    margin-top: min(1vw);
+    margin-bottom: 2vw;
+    font-size: min(2vw, 20px);
+}
+
+
+
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: min(10vw, 100px);
+
+    margin-top: 5vw;
+    background-color: #FDF1D1;
+    border-top: 2px #F8BFA5 solid;
+}
+
+    .footer a{
+        font-size: min(2vw, 20px) ;
+    }
+
+    .fLogo{
+        width: min(20vw, 250px);
+        grid-column: 1;
+        grid-row: 1 / span 3;
+
+        margin: auto auto auto auto;
+        margin-top: -2vw;
+        padding: 2vw;
+    }
+
+    .fAboutUs{
+        grid-column: 2;
+        grid-row: 1;
+        margin: 1vw auto auto auto;
+    }
+
+    .fShop{
+        grid-column: 3;
+        grid-row: 1;
+        margin-top: 1vw;
+    }
+
+    .fProducers{
+        grid-column: 3;
+        grid-row: 2;
+        margin-top: max(-9.5vw, -120px);
+    }
+
+    .fMyAccount{
+        grid-column: 4;
+        grid-row: 1;
+        margin: 1vw auto auto -8vw;
+    }
+
+    .fLogin{
+        grid-column: 4;
+        grid-row: 2;
+        margin: auto auto auto -8vw;
+        margin-top: max(-9.5vw, -120px);
+    }
+
+    .fSignup{
+        grid-column: 4;
+        grid-row: 3;
+        margin: -6.5vw auto 0vw -8vw;
+        margin-top: max(-6.5vw, -92px)
+    }
+
+.socialMedia{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 2vw;
+    width: min(90vw, 1250px);
+
+    background-color: #FDF1D1;
+}
+
+    .socialMedia div{
+    display: flex;
+    font-size: min(2vw, 25px);
+    }
+
+    .social{
+        width: min(3vw, 25px);
+        height: min(3vw, 25px);
+        margin: auto 1.5vw auto auto;
+    }
+
+
+
+.legal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-right: 1vw;
+
+    text-align: right;
+    font-size: min(2vw, 20px);
+
+    background-color: #FDF1D1;
+}

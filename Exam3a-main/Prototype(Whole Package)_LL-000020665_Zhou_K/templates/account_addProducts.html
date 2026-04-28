@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Account</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/account.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <h1 class="title"> My Account </h1>
+    <div class="underline"></div>
+    <div class="dashboard">
+        <div class="sideNav">
+            <div class="myAccount">
+                <h3> My Account</h3>
+                <a href="account"> User Details </a>
+                <a href="wip"> Purchases </a>
+                <a href="wip"> Loyalty Points </a>
+            </div>
+            <div class="myProducts">
+                <h3> My Products</h3>
+                <a href="account_myProfile"> My Profile </a>
+                <a href="account_addProducts"> Add Products </a>
+                <a href="account_editProducts"> Edit Products</a>
+            </div>
+
+            <a href="/logout"> Logout </a>
+
+            <br>
+
+            <div class="settings">
+                <a href="wip"> Settings </a>
+            </div>
+        </div>
+
+        <form method="POST" class="sideContainer">
+            <h2> Add Products </h2>
+                <h3> Image </h3>
+                <input id="image" name="image">
+
+                <h3> Item Name </h3>
+                <input id="item" name="item">
+
+                <h3> Mini Description </h3>
+                <input id="mini" name="mini">
+
+                <h3> Description </h3>
+                <input id="description" name="description">
+
+                <h3> Price </h3>
+                <input id="price" name="price">
+
+                <h3> Quantity </h3>
+                <input id="quantity" name="quantity">
+
+            <button class="button" type="submit"> Add product </button>
+        </form>
+
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

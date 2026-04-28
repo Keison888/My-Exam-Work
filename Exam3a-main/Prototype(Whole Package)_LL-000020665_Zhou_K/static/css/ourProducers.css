@@ -1,0 +1,66 @@
+.banner{
+    font-size: min(2.5vw, 30px);
+}
+
+.producers{
+    height: 50vw;
+}
+
+button{
+    border: none;
+}
+
+input{
+    border: 0.5px white solid;
+}
+
+.producerCard{
+    display: grid;
+    grid-template-columns: min(24vw, 500px) min(55vw, 775px);
+    width: min(80vw, 1250px);
+    height: 18vw;
+    gap: 1vw;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageBox{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image{
+    width: min(23vw, 500px);
+    height: 17vw;
+    background-color: white;
+    margin: 0.5vw auto auto 0.5vw;
+}
+
+.info{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.info h4{
+    text-align: center;
+    margin-top: 1.5vw;
+    font-size: min(2vw, 30px);
+}
+
+.underline{
+    width: 20vw !important;
+    margin-top: -3vw !important;
+}
+
+.info h5{
+    margin-top: -4vw;
+    font-size: min(1.25vw, 17px);
+    margin-left: 0.5vw;
+}
+
+.button{
+    width: 12vw;
+    font-size: 1.5vw;
+    margin-right: 1vw !important;
+    padding: 0.25vw !important;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basket</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/basket.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+
+    <h1 class="title"> Basket </h1>
+    <div class="underline"></div>
+
+    <div class="basketInter">
+        <div class="dashboard">
+            <div class="innerDashboard">
+                <div class="basketProductCard">
+                    <img src="static/Apple.jpg" class="image">
+                    <div class="miniDescription">
+                        <h3> Product Name </h3>
+                        <h5 class="miniDetails"> Product Description </h5>
+                        <h5 class="unitPrice"> { Unit Price } </h5>
+                    </div>
+
+                    <div class="quantity">
+                        <div class="quantitySelect">
+                            <button class="sub"> < </button>
+                            <h4 class="numbers"> { quantity } </h4>
+                            <button class="add"> > </button>
+
+                            <button class="remove"> Remove All </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="prices">
+            <h2> Prices </h2>
+            <div class="underline"></div>
+
+            <div class="priceCard">
+                <h5> { ? }x </h5>
+                <h5> { Item Name } </h5>
+                <h5> { £---.-- } </h5>
+            </div>
+
+            <div class="underline"></div>
+            <div class="totalPrice">
+                <h5> Total </h5>
+                <h5 class="sum"> { £---.-- } </h5>
+            </div>
+
+            <a href="checkout" class="button"> Check Out </a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    {% endblock %}
+
+</body>
+</html>

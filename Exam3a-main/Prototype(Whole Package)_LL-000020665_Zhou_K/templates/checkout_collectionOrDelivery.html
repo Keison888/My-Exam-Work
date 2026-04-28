@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Out</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/checkout.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <h1 class="title"> Checkout </h1>
+    <div class="underline"></div>
+    <div class="dashboard">
+        <div class="sideNav">
+            <h3> Check Out</h3>
+            <a href="checkout"> Your Details </a>
+            <a href="checkout_collectionOrDelivery"> Collection / Delivery </a>
+            <a href="wip"> Payment </a>
+        </div>
+
+        <div class="sideContainer">
+            <h2> Collection Or Delivery? </h2>
+            <form>
+                <div>
+                    <h3 class="tickText"> Collection </h3>
+                    <input class="checkbox" type="checkbox" id="collection" name="collection" value="True">
+                </div>
+                <div>
+                    <h3 class="tickText"> Delivery </h3>
+                    <input class="checkbox" type="checkbox" id="delivery" name="delivery" value="True">
+                </div>
+
+                <h2> Address </h2>
+                <div class="houseNumber">
+                    <h3> House Number </h3>
+                    <input id="houseNumber" name="houseNumber">
+                </div>
+
+                <div class="Address1">
+                    <h3> Address 1 </h3>
+                    <input id="Address1" name="Address1">
+                </div>
+
+                <div class="Address2">
+                    <h3> Address 2 </h3>
+                    <input id="Address2" name="Address2">
+                </div>
+
+                <div class="postCode">
+                    <h3> Post code </h3>
+                    <input id="postCode" name="postCode">
+                </div>
+
+                <button class="button" type="submit"> Continue </button>
+            </form>
+
+        </div>
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+.productCard{
+    display: grid;
+    grid-template-rows: min(5vw, 30px) min(20vw, 275px) min(10vw, 100px);
+    width: min(19.75vw, 250px);
+    height: min(35vw, 400px);
+    border: 1px black solid;
+}
+
+.productCard h4{
+    width: min(19.75vw, 250px);
+    height: min(1.75vw, 30px);
+
+    text-align: center;
+    margin-top: 0px;
+    padding-top: min(2vw, 10px);
+    padding-bottom: min(4vw, 20px);
+    font-size: min(2vw, 30px);
+    background-color: #98EF8E;
+}
+
+.productImage{
+    width: min(19.75vw, 250px);
+    height: 15vw;
+    margin: auto;
+}
+
+.productInfo{
+    display: grid;
+    grid-template-rows: min(5vw, 70px) min(2vw, 15px) 1.5vw;
+    width: min(19.75vw, 250px);
+    background-color: #D03D3D;
+    margin-top: -1vw;
+
+}
+
+.productDescription{
+    height: min(5vw, 70px);
+    margin-top: 0px;
+    color: white;
+    background-color: #D03D3D;
+    font-size: min(1.5vw, 20px);
+}
+
+.productPrice{
+    height: min(2vw, 15px);
+    font-size: min(1.5vw, 20px);
+    color: white;
+    text-align: right;
+    margin-top: 0px;
+    padding-right: 1vw;
+}
+
+.productButton{
+    background-color: #98EF8E;
+    margin: auto;
+    border: 1px #F9FFED solid;
+    text-align: center;
+
+    width: min(10vw, 100px);
+    height: min(1.5vw, 20px);
+    font-size: min(1.5vw, 20px);
+
+    padding: min(0.5vw, 3px) !important;
+}

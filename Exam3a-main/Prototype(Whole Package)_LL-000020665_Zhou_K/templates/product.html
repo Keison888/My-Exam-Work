@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/product.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    {% for info in product %}
+    <h1 class="title"> {{ info[3] }} </h1>
+    <div class="underline"></div>
+    <div class="productSummary">
+        <div class="image"> {{ info[2] }} </div>
+        <div class="description">
+            <h3> {{ info[4] }} </h3>
+            <h4 class="availability"> Available: {{ info[7] }} </h4>
+        </div>
+
+        <form class="quantitySelect" method="POST">
+            <button class="sub"> < </button>
+            <input id="quantity" name="quantity" class="numbers">
+            <button class="add"> > </button>
+
+            <button class="button" type="submit"> Add to Basket </button>
+        </form>
+    </div>
+
+
+    <div class="details">
+        <h2> {{ info[3] }} </h2>
+        <h4> {{ info[5] }} </h4>
+    </div>
+
+    {% endfor %}
+
+
+    {% endblock %}
+
+</body>
+</html>

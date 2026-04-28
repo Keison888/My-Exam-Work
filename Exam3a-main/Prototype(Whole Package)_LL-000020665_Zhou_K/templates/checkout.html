@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Out</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/checkout.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <h1 class="title"> Checkout </h1>
+    <div class="underline"></div>
+    <div class="dashboard">
+        <div class="sideNav">
+            <h3> Check Out</h3>
+            <a href="checkout"> Your Details </a>
+            <a href="checkout_collectionOrDelivery"> Collection / Delivery </a>
+            <a href="wip"> Payment </a>
+        </div>
+
+        <div class="sideContainer">
+            <h2> Account Details </h2>
+            <form method="POST">
+                <div class="name">
+                    <h3> Name </h3>
+                    <input id="name" name="name">
+                </div>
+
+                <div class="email">
+                    <h3> Email </h3>
+                    <input id="email" name="email">
+                </div>
+
+                <div class="phoneNumber">
+                    <h3> Phone Number </h3>
+                    <input id="phoneNumber" name="phoneNumber">
+                </div>
+
+                <button class="button" type="submit"> Continue </button>
+            </form>
+        </div>
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

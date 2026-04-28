@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/base.css')}}" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" > <img src="static/Logo - Main - Light.png" class="logo"> </a>
+        <a href="shop" class="market"> Shop </a>
+        <a href="ourProducers" class="ourProducers"> Our Producers </a>
+        <a href="login" class="myAccount"> My Account </a>
+        <a href="basket"> <img src="static/Basket.png" class="basket"> </a>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <div class="footer">
+        <a href="/"> <img src="static/Logo - Main - Light.png" class="fLogo"> </a>
+            <a href="wip" class="fAboutUs"> About Us</a>
+
+            <a href="shop" class="fShop"> Shop </a>
+            <a href="ourProducers" class="fProducers"> Producers </a>
+
+            <a href="account" class="fMyAccount"> My Account </a>
+            <a href="login" class="fLogin"> Login </a>
+            <a href="signup" class="fSignup"> Signup </a>
+    </div>
+
+    <div class="socialMedia">
+        <a href="wip">
+            <div class="facebook">
+                <img src="static/Facebook.png" class="social">
+                <h5> Facebook </h5>
+            </div>
+        </a>
+        <a href="wip">
+            <div class="pintrest">
+                <img src="static/Pintrest.png" class="social">
+                <h5> Pintrest </h5>
+            </div>
+        </a>
+        <a href="wip">
+            <div class="instagram">
+                <img src="static/Instagram.png" class="social">
+                <h5> Instagram </h5>
+            </div>
+        </a>
+    </div>
+
+    <div class="legal">
+        <a href="wip"> Terms of Services </a>
+        <a href="wip"> Conditions </a>
+    </div>
+
+</body>
+</html>

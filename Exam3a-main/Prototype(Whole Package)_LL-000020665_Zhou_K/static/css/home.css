@@ -1,0 +1,38 @@
+h2{
+    padding: 15px;
+    color: white;
+    background-color: #390000;
+    border: 4px #853C3C solid;
+}
+
+.bannerText{
+    height: 8vw;
+    font-size: min(3.2vw, 75px);
+    margin-top: 5vw !important;
+}
+
+.featured{
+
+    background-image: url("static/Field1.jpg");
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 65vh 65vh;
+    height: 67vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2vw;
+
+    background-color: rgba(0,0,0,0.25);
+}
+
+.banner .button{
+    height: 2.5vw;
+    width: 20vw;
+    font-size: 2.25vw;
+    margin-top: 2vw !important;
+}
+
+

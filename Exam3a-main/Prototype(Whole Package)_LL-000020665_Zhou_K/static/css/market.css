@@ -1,0 +1,22 @@
+.bannerText{
+    height: 5vw;
+    font-size: min(5vw, 75px)
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-template-rows: 65vh 65vh;
+    height: 67vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2vw
+}
+
+button{
+    border: none;
+}
+
+input{
+    border: 0.5px white solid;
+}

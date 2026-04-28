@@ -1,0 +1,47 @@
+body{
+    background-color: rgba(0,0,0,0.25);
+}
+
+.dashboard{
+    grid-template-columns: auto auto;
+    height: auto;
+}
+
+.dashboard h3{
+    text-align: left !important;
+}
+
+.sideNav{
+    width: min(20vw, 250px);
+    border: 1px white solid;
+}
+
+
+
+.sideContainer{
+    width: min(65vw, 900px);
+    border: 1px white solid;
+}
+
+.sideContainer div{
+    display: flex;
+}
+
+.button{
+    width: 12vw;
+    font-size: 1.25vw;
+}
+
+input{
+    width: 40vw;
+    height: 3vw;
+    color: white;
+    background-color: rgba(0,0,0,0.75);
+    border: 0.25px #F9FFED solid;
+
+    margin: auto;
+}
+
+
+
+

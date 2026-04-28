@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(0,0,0,0.25);
+}
+
+.dashboard{
+    width: min(55vw, 700px);
+    height: min(50vw, 500px);
+}
+
+.innerDashboard{
+    grid-template-rows: auto auto auto auto;
+    width: min(55vw, 700px);
+    height: min(50vw, 500px);
+    gap: min(1vw, 10px);
+}
+
+.button{
+    width: min(25vw, 300px);
+    height: min(4vw, 35px);
+    font-size: min(2vw, 17px);
+    margin-top: max(-4vw, -15px) !important;
+}

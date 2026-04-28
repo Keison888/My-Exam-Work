@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Producers</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/ourProducers.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="banner">
+        <h1 class="bannerText"> Our Producers </h1>
+    </div>
+
+
+    <div class="filter">
+        <h3> Filter By: </h3>
+        <button> Category </button>
+        <button> Category </button>
+        <button> Category </button>
+        <input id="search" name="search" placeholder="Search">
+    </div>
+
+    <div> Sort By </div>
+
+    <div class="producers">
+        {% for producer in producers %}
+        <div class="producerCard">
+            <div class="imageBox">
+                <img src="static/Barn.jpg" class="image">
+            </div>
+            <div class="info">
+                <h4> {{ producer[2] }} </h4>
+                <div class="underline"></div>
+                <h5> {{ producer[4] }} </h5>
+                <a href="producer" class="button"> View </a>
+            </div>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

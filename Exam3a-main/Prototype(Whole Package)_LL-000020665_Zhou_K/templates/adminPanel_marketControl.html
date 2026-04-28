@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/adminPanel.css')}}" />
+</head>
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+
+    <h1 class="title"> My Admin </h1>
+    <div class="underline"></div>
+    <div class="dashboard">
+        <div class="sideNav">
+            <div class="adminPanel">
+                <h3> My Account</h3>
+                <a href="adminPanel"> User Details </a>
+                <a href="adminPanel_producerWhitelist"> Producer Whitelist </a>
+                <a href="adminPanel_marketControl"> Market Control</a>
+            </div>
+            <a href="/logout"> Logout </a>
+            <br><br>
+
+            <div class="settings">
+                <a href="wip"> Settings </a>
+            </div>
+        </div>
+
+        <form method="POST" class="sideContainer">
+            <h2> Market Listed Products </h2>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>UserId</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Mini Description</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+
+                {% for product in result %}
+                <tr>
+                    {% for id in product %}
+                    <td> {{ id }} </td>
+
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+
+            <h5> Remove Item by ID</h5>
+            <input id="remove" name="remove">
+        </form>
+
+    </div>
+
+    {% endblock %}
+
+</body>
+</html>

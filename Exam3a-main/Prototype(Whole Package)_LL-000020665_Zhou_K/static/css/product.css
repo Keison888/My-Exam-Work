@@ -1,0 +1,101 @@
+body{
+    background-color: rgba(0, 0, 0, 0.25)
+}
+
+.productSummary{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 25vw;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.image{
+    border: 1px white solid;
+    grid-row: 1 / span 2;
+    margin: 1vw;
+}
+
+.description{
+    display: grid;
+    grid-template-rows: 16vw 2vw;
+    height: 17vw;
+    border: 1px white solid;
+    margin: 1vw 1vw 0vw 0vw;
+    color: white;
+}
+
+.description h3{
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.availability{
+    height: 2vw;
+    margin-top: -2vw;
+    margin-right: 0.5vw;
+    text-align: right;
+}
+
+.quantitySelect{
+    display: grid;
+    grid-template-columns: 2.5vw 11vw 2.5vw 9vw;
+    height: 4.5vw;
+    font-size: 1.5vw;
+    margin: 0vw 1vw 0vw 0vw;
+    border: 1px white solid;
+}
+
+.sub{
+    height: 5vh;
+    margin: 1vw auto auto auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px white solid;
+    color: #D03D3D;
+    font-weight: bold;
+}
+
+.numbers{
+    width: 11vw;
+    height: 2.5vh;
+    padding: 0.75vh;
+    border: 0.1vw white solid;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 1.25vw;
+}
+
+.add{
+    height: 5vh;
+    margin: 1vw auto auto 1vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px white solid;
+    color: #98EF8E;
+    font-weight: bold;
+}
+
+.button{
+    width: 15vw;
+    height: 2vw !important;
+    padding: 0vw !important;
+    margin-left: 22vw !important;
+}
+
+.details{
+    height: 40vw;
+    border: 0.1vw white solid;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 3vw;
+    color: white;
+}
+
+.details h2{
+    text-align: left !important;
+    padding: 0.5vw;
+    padding-top: 0px;
+}
+
+.details h4{
+    padding: 0.5vw;
+}
