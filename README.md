@@ -1,4 +1,4 @@
-<h3 style="color: red; font-weight: bold;"> Overview </h3>
+<h3> Overview </h3>
 
 <h4> 
   The folder 'Prototype' contain the WHOLE project file, this can be easily transfered to pycharm and all you have to do is run the python file.
