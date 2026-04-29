@@ -58,7 +58,7 @@
 <h3> 
   That's about it.<br> 
   I hope that it atleast runs and once you feel that you have done explored enough,<br>
-  Be sure to move back to the email and fill in the survay.
+  Be sure to move back to the email and fill in the survey.
 </h3>
 
 <h4>
