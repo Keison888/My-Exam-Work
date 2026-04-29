@@ -128,15 +128,15 @@ def account():
         email = request.form['email']
         phoneNumber = request.form['phoneNumber']
         if name == "":
-            name = currentUserDetails[2]
+            name = currentUserDetails[1]
         if email == "":
-            name = currentUserDetails[3]
+            email = currentUserDetails[2]
         if phoneNumber == "":
-            name = currentUserDetails[5]
+            phoneNumber = currentUserDetails[4]
 
         query = update(User).where(User.c.Id == currentUserId).values(Name=name, Email=email, PhoneNumber=phoneNumber)
         conn.execute(query)
-        return redirect("account")
+        return
     return render_template("account.html", currentUserDetails=currentUserDetails)
 
 @login_required
@@ -261,11 +261,11 @@ def adminPanel():
         phoneNumber = request.form['phoneNumber']
 
         if name == "":
-            name = currentUserDetails[2]
+            name = currentUserDetails[1]
         if email == "":
-            name = currentUserDetails[3]
+            email = currentUserDetails[2]
         if phoneNumber == "":
-            name = currentUserDetails[5]
+            phoneNumber = currentUserDetails[5]
 
         query = update(Admin).where(Admin.c.Id == currentUserId).values(Name=name, Email=email, PhoneNumber=phoneNumber)
         conn.execute(query)
@@ -467,10 +467,12 @@ def signup():
         # Insert values into the database
         conn = engine.connect()
         conn.execute(insert(User).values(Name=name, Email=email, Password=password))
+        '''
+            userInfo = conn.execute(select([User]).where(User.c.Email == email)).fetchall()
+            userId = userInfo[0]
+            conn.execute(insert(Basket).values(UserId=userId))
+        '''
 
-        userInfo = conn.execute(select([User]).where(User.c.Email == email)).fetchall()
-        userId = userInfo[0]
-        conn.execute(insert(Basket).values(UserId=userId))
     return render_template("signup.html")
 
 # A temporary page that is used to fill in any links that could be built on in the future.
@@ -489,4 +491,5 @@ def callAll(tableName):
     return result
 
 if __name__ == "__main__":
+    print(conn.execute(select([Admin]).where(User.c.Id == "1")).fetchone())
     app.run(debug=True)
