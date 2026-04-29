@@ -46,7 +46,7 @@
   <li>Explore every page</li>
   <li>Create an account</li>
   <li>'Login'</li>
-  <li>Edit the edit the details of the account</li>
+  <li>Edit the details of the account</li>
   <li>Login to the admin account</li>
   <li>Make your regular account 'producer verified'</li>
   <li>Delete one of my pre-set products</li>
