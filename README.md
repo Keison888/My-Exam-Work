@@ -62,8 +62,8 @@
 </h3>
 
 <h4>
-  If you need help with anything, feel free to message me.
-  I'll try to respond as soon as I can.
+  If you need help with anything, feel free to message me.<br>
+  I'll try to respond as soon as I can, emails will do fine
 </h4>
 
 
