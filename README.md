@@ -42,7 +42,7 @@
 <h4> The login for the admin account is:</h4>
 <h5> Email: test@email.com </h5>
 <h5> Password: abc </h5>
-<h4> The link to the admin login is: http://127.0.0.1:5000/adminLogin</h4>
+<h4> The link to the admin login is: https://my-exam-work.onrender.com/adminLogin</h4>
 
 <h3> Unsure what to do?</h3>
 <h4> Here is a list of things that I suggest you do: </h4>
